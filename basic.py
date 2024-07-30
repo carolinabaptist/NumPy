@@ -108,3 +108,32 @@ array_o = np.ones(10)
 array_c = np.full(10, 5.)
 
 #print(array_c, array_o, array_z)
+
+# Write a NumPy program to create an array of integers from 30 to 70.
+x = 30
+y = 71
+array = np.arange(x, y)
+#print("Array de", x, "até", y-1, ":", array)
+
+#Write a NumPy program to create a 3x3 identity matrix.
+
+data = [[1, 0, 0], [0, 1, 0], [0, 0, 1]] # or np.identity(3)
+matrix = np.array(data)
+#print(matrix)
+
+#Write a NumPy program to generate a random number between 0 and 1.
+a = 0
+b = 1
+random_number = np.random.uniform(a, b)
+#print("Número aleatório contínuo entre", a, "e", b, ":", random_number)
+
+#Write a NumPy program to generate an array of 15 random numbers from a standard normal distribution.
+
+# standard normal distribution - mean is 0 and standard deviation is 1
+# The distribution is symmetrical around the mean.
+# The shape of the curve is a bell, which is typical of normal distributions.
+
+#This function generates samples from a snd (Probability Density Function): np.random.randn()
+
+data = np.random.randn(15)
+print(data)
