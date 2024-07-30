@@ -68,4 +68,43 @@ def isScalar(array):
             return True
     return False
 array = np.array([[1,1]])
-print(isScalar(array))
+
+#Write a NumPy program to test whether two arrays are element-wise equal within a tolerance.
+
+def isClose(a, b, tol):
+    if False in np.isclose(a, b, atol=tol):
+        return False
+    return True
+
+#a = np.array([1.0, 2.0, 3.0])
+#b = np.array([1.0, 2.3, 2.9])
+#tol = 0.2
+
+#Write a NumPy program to create an element-wise comparison (greater, greater_equal, less and less_equal) of two given arrays.
+#a = np.array([1.0, 2.0, 3.0])
+#b = np.array([1.0, 2.3, 2.9])
+
+def greater(a,b):
+    return a>b #or np.greater(x,y)
+
+def greater_equal(a,b):
+    return a>=b #or np.greater_equal(x,y)
+
+def less(a,b):
+    return np.less(a,b)
+
+def less_equal(a,b):
+    return np.less_equal(a,b)
+
+#Write a NumPy program to create an array with the values 1, 7, 13, 105 and determine the size of the memory occupied by the array.
+a = np.array([1, 7, 13, 105])
+memory_size = a.nbytes
+#print(memory_size)
+
+#Write a NumPy program to create an array of 10 zeros, 10 ones, and 10 fives. 
+
+array_z = np.zeros(10)
+array_o = np.ones(10)
+array_c = np.full(10, 5.)
+
+#print(array_c, array_o, array_z)
