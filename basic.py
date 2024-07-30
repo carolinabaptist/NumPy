@@ -40,3 +40,32 @@ def isNan(array):
     if True in np.isnan(array):
         return True
     return False
+
+#Write a NumPy program to test elements-wise for positive or negative infinity. 
+def isInfPosNeg(array):
+    if True in np.isposinf(array) or True in np.isneginf(array):
+        return True
+    return False
+
+#Write a NumPy program to test element-wise for complex numbers, real numbers in a given array. Also test if a given number is of a scalar type or not.
+
+def isComplex(array):
+    if True in np.iscomplex(array):
+        return True
+    return False
+
+#reais: naturais, inteiros, racionais, irracionais
+def isReal(array):
+    if True in np.isreal(array):
+        return True
+    return False
+
+#scalars: int, float, complex, bool, string
+#not scalar: array
+def isScalar(array):
+    for el in array:
+        if np.isscalar(el) == True:
+            return True
+    return False
+array = np.array([[1,1]])
+print(isScalar(array))
