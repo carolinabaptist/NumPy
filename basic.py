@@ -125,7 +125,7 @@ matrix = np.array(data)
 a = 0
 b = 1
 random_number = np.random.uniform(a, b)
-#print("Número aleatório contínuo entre", a, "e", b, ":", random_number)
+#print("Random number btw:", a, "e", b, ":", random_number)
 
 #Write a NumPy program to generate an array of 15 random numbers from a standard normal distribution.
 
@@ -135,5 +135,45 @@ random_number = np.random.uniform(a, b)
 
 #This function generates samples from a snd (Probability Density Function): np.random.randn()
 
-data = np.random.randn(15)
-print(data)
+data = np.random.randn(15) #or np.random.normal(0,1,15)
+
+#Write a NumPy program to create a 3X4 array and iterate over it.
+
+a = np.arange(10, 22).reshape((3, 4))
+
+#for el in np.nditer(a):
+    #print(el, end = " ")
+
+#Write a NumPy program to create a vector of length 10 with values evenly distributed between 5 and 50.
+val = np.linspace(5, 50, 10)
+
+#Write a NumPy program to create a vector with values from 0 to 20 and change the sign of the numbers in the range from 9 to 15.
+v = np.random.randint(0, 21, 20)
+#print(v)
+def mudar_sinal(v,i1,i2):
+    v[i1:i2] = -v[i1:i2]
+    return v
+#print(mudar_sinal(v,9,16))
+
+#Write a NumPy program to create a vector of length 5 filled with arbitrary integers from 0 to 10.
+val = np.random.randint(0, 11, 5)
+
+#Write a NumPy program to multiply the values of two given vectors.
+a = np.arange(5)
+b = np.arange(5)
+prod = a * b
+
+#Write a NumPy program to create a 3x4 matrix filled with values from 10 to 21.
+a = np.arange(10, 22).reshape((3, 4))
+
+#Write a NumPy program to find the number of rows and columns in a given matrix.
+a = np.arange(10, 22).reshape((3, 4))
+
+#print(len(a),len(a[0])) or
+#print("Number of rows and columns of the said matrix:")
+#print(a.shape) 
+            
+#Write a  NumPy program to create a 3x3 identity matrix, i.e. the diagonal elements are 1, the rest are 0.
+#i = np.identity(3) or
+x = np.eye(3)
+
