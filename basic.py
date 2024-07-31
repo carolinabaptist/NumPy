@@ -177,3 +177,17 @@ a = np.arange(10, 22).reshape((3, 4))
 #i = np.identity(3) or
 x = np.eye(3)
 
+#Write a NumPy program to create a 10x10 matrix, in which the elements on the borders will be equal to 1, and inside 0.
+x = np.ones((10, 10))
+x[1:-1, 1:-1] = 0
+
+#Write a NumPy program to create a 5x5 zero matrix with elements on the main diagonal equal to 1, 2, 3, 4, 5.
+x = np.zeros((5, 5))
+for i in range(5):
+    x[i,i] = i + 1
+#or x = np.diag([1, 2, 3, 4, 5])
+
+#Write a NumPy program to create a 4x4 matrix in which 0 and 1 are staggered, with zeros on the main diagonal.
+x = np.zeros((4, 4))
+x[::2, 1::2] = 1
+x[1::2, 0::2] = 1
