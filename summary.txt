@@ -1,0 +1,17 @@
+Numpy
+
+np.array([1,1,1]): builds an array
+np.inf: positive infinity. It is used to indicate values ​​that exceed any finite number.
+-np.inf: negative infinity. It is used to indicate values ​​that are less than any finite number.
+np.nan: undefined or missing value. It is not considered a valid number.
+
+np.version.version: get the Numpy version
+np.show_config(): get Numpy build configuration
+np.info(np.add): get help with the add function
+np.all(a): test whether none of the elements of a given array are zero. True 
+if there's no 0 in the array. False if there's a 0 in the array.
+np.any(b): True if any of the elements are not zero. False if at least one of the elements is zero.
+np.isinf(array): returns a Boolean array where each element is True if the corresponding 
+element in the input array is infinite (positive or negative) and False otherwise.
+np.isnan(array): returns a Boolean array where each element is True if the 
+corresponding element in the input array is NaN (Not a Number) and False otherwise.
